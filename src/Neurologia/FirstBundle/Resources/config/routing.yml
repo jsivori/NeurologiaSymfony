@@ -1,0 +1,6 @@
+neurologia_first_homepage:
+    path:     /index
+    defaults: { _controller: NeurologiaFirstBundle:Default:index }
+neurologia_first_backend:
+    path:     /index/backend/{name}
+    defaults: { _controller: NeurologiaFirstBundle:Default:backend }

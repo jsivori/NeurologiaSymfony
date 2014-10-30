@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Neurologia\FirstBundle\Entity\EnfermedadActual" table="enfermedad_actual">
+    <id name="idEnfermedadActual" type="integer" column="id_enfermedad_actual">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="idHistoriaClinica" type="integer" column="id_historia_clinica" nullable="true"/>
+    <field name="detalle" type="string" column="detalle" length="255" nullable="true"/>
+  </entity>
+</doctrine-mapping>

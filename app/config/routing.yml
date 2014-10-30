@@ -1,0 +1,4 @@
+neurologia_first:
+    resource: "@NeurologiaFirstBundle/Resources/config/routing.yml"
+    prefix:   /
+

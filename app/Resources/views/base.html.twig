@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>{% block title %}Servicio de Neurologia{% endblock %}</title>
+	</head>
+	<body>
+		<nav id="sidebar">
+			{% block sidebar %}
+			<ul>
+				<li><a href="{{ asset('index') }}">Home</a></li>
+			</ul>
+			{% endblock %}
+		</nav>
+
+		<div id="contenido">
+			{% block body %}{% endblock %}
+		</div>
+	</body>
+</html>

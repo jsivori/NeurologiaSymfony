@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Neurologia\FirstBundle\Entity\Usuario" table="usuario">
+    <id name="idPersona" type="integer" column="id_persona">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="idRol" type="integer" column="id_rol" nullable="true"/>
+    <field name="username" type="string" column="username" length="255" nullable="true"/>
+    <field name="password" type="string" column="password" length="255" nullable="true"/>
+    <field name="habilitado" type="boolean" column="habilitado" nullable="true"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Neurologia\FirstBundle\Entity\Persona" table="persona">
+    <id name="idPersona" type="integer" column="id_persona">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="idEstadoCivil" type="integer" column="id_estado_civil" nullable="true"/>
+    <field name="nombre" type="string" column="nombre" length="255" nullable="true"/>
+    <field name="apellido" type="string" column="apellido" length="255" nullable="true"/>
+    <field name="numeroDocumento" type="string" column="numero_documento" length="255" nullable="true"/>
+    <field name="telefono" type="string" column="telefono" length="255" nullable="true"/>
+    <field name="email" type="string" column="email" length="255" nullable="true"/>
+    <field name="fechaDeNacimiento" type="date" column="fecha_de_nacimiento" nullable="true"/>
+    <field name="direccion" type="string" column="direccion" length="255" nullable="true"/>
+    <field name="idTipoDocumento" type="integer" column="id_tipo_documento" nullable="true"/>
+    <field name="idSexo" type="integer" column="id_sexo" nullable="true"/>
+  </entity>
+</doctrine-mapping>
